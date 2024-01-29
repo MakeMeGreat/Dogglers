@@ -33,16 +33,16 @@ import com.example.dogglers.data.DataSource
 class DogCardAdapter(
     private val context: Context?, private val layout: Int
 ) : RecyclerView.Adapter<DogCardAdapter.DogCardViewHolder>() {
-    val dataSet = DataSource.dogs
+    private val dataSet = DataSource.dogs
 
     /**
      * Initialize view elements
      */
-    class DogCardViewHolder(view: View) : RecyclerView.ViewHolder(view!!) {
-        val imageView: ImageView = view!!.findViewById(R.id.item_image)
-        val nameTextView: TextView = view!!.findViewById(R.id.item_name)
+    class DogCardViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        val imageView: ImageView = view.findViewById(R.id.item_image)
+        val nameTextView: TextView = view.findViewById(R.id.item_name)
         val ageTextView: TextView = view.findViewById(R.id.item_age)
-        val hobbiesTextView: TextView = view!!.findViewById(R.id.item_hobbies)
+        val hobbiesTextView: TextView = view.findViewById(R.id.item_hobbies)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DogCardViewHolder {
