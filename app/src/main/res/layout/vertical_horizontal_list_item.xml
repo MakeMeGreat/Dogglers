@@ -26,10 +26,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <!-- TODO: Note that, unlike the grid view list, one card in the vertical and horizontal
-               lists effectively take up the width of the screen. This means you have more
-               room to display information spanning the width of the card.-->
-
         <ImageView
             android:id="@+id/item_image"
             android:layout_width="match_parent"
@@ -39,10 +35,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <!-- TODO: Create an ImageView resource for the image of the dog.
-               The height should be 194dp
-               The width should match the with of the card
-               The scaleType should be set to centerCrop-->
         <TextView
             android:id="@+id/item_name"
             android:layout_width="wrap_content"
@@ -69,10 +61,6 @@
             android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/item_name" />
-        <!-- TODO: Create a TextView for each of the following:
-                The dog's name
-                The dog's age
-                The dog's hobbies-->
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
